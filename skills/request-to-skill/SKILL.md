@@ -1,5 +1,5 @@
 ---
-name: da-richiesta-a-skill
+name: request-to-skill
 description: >
   Decide quando una richiesta che torna merita una skill, e la scrive. Prima di produrre
   un prompt usa e getta controlla se il lavoro è già coperto da una skill esistente; alla

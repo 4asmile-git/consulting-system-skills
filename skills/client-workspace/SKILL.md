@@ -1,5 +1,5 @@
 ---
-name: spazio-cliente
+name: client-workspace
 description: >
   Apre lo spazio di lavoro di un cliente nuovo e lo tiene leggibile: una cartella, una
   scheda a dodici voci che dice dove vive ogni pezzo del sapere su quel cliente, un file
@@ -70,7 +70,7 @@ Le altre cartelle si aggiungono quando servono, con una riga nella scheda che di
 2. Crea `clienti/<codice>/` con le tre sottocartelle.
 3. Scrivi `SCHEDA.md` dal modello. Ogni voce punta al file e alla sezione dove quel sapere vive. Una voce che non ha ancora contenuto si scrive `manca`, con il nome di chi ha il dato.
 4. Scrivi `SAPERE.md` con quello che si sa già. Ogni fatto porta data, fonte ed etichetta (vedi le regole sui fatti).
-5. Crea `STATO.md`, `PROMESSE.md` e `CALL.md` dai modelli. Se è installata `stato-ingaggio`, da qui in poi li tiene lei.
+5. Crea `STATO.md`, `PROMESSE.md` e `CALL.md` dai modelli. Se è installata `engagement-status`, da qui in poi li tiene lei.
 6. Aggiungi la riga del cliente in `ELENCO.md`.
 7. Fai l'inventario del materiale già esistente: cosa c'è, dove, di che data. Quello che arriva dal cliente va in `ricevuti/` senza modifiche. Per ogni call già fatta, una voce in `CALL.md`.
 8. Chiudi con un riepilogo breve: file creati, voci rimaste `manca` con chi ha il dato, le prime tre domande da fare al cliente.
@@ -281,7 +281,7 @@ E in `SAPERE.md` la divergenza tra due fonti resta scritta:
 - Riordinare i file di un cliente esistente senza che sia stato chiesto. L'allineamento scrive la scheda e basta.
 - Copiare lo stesso numero in tre file. Al primo aggiornamento due copie restano vecchie.
 - Mettere nella scheda lo stato della settimana. Le cose che cambiano ogni settimana stanno in `STATO.md`.
-- Creare una skill dedicata a un cliente al primo lavoro. Finché un lavoro non si è ripetuto tre volte bastano la scheda e le skill generiche (vedi `da-richiesta-a-skill`).
+- Creare una skill dedicata a un cliente al primo lavoro. Finché un lavoro non si è ripetuto tre volte bastano la scheda e le skill generiche (vedi `request-to-skill`).
 
 ## Se non puoi scrivere file
 

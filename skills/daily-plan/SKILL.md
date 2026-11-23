@@ -1,5 +1,5 @@
 ---
-name: piano-del-giorno
+name: daily-plan
 description: >
   Apre e chiude la giornata di chi lavora su più clienti. Al primo messaggio del giorno
   legge stati, promesse e bozze in attesa, ricorda l'impegno preso il giorno prima e fa

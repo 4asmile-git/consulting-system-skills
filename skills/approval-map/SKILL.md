@@ -1,5 +1,5 @@
 ---
-name: chi-approva-cosa
+name: approval-map
 description: >
   Scrive e applica la mappa dell'autonomia: per ogni tipo di output dice quando è
   finito, se Claude può chiuderlo da solo e cosa richiede il sì dell'utente. Tiene la

@@ -1,5 +1,5 @@
 ---
-name: correzione-in-regola
+name: correction-to-rule
 description: >
   Trasforma una correzione in una regola scritta, così lo stesso errore non torna alla
   conversazione successiva. Gestisce tre tipi di correzione: di stile (la lista nera
@@ -45,7 +45,7 @@ Perché la lista e le regole vengano lette davvero, proponi all'utente di aggiun
 
 ```markdown
 - Prima di consegnare un testo rileggilo contro `sistema/STILE.md`.
-- Una correzione che può ripetersi si applica con la skill `correzione-in-regola`, senza chiedere conferma, con una riga di eco.
+- Una correzione che può ripetersi si applica con la skill `correction-to-rule`, senza chiedere conferma, con una riga di eco.
 - Le regole di lavoro stanno in questo file. Lo stato datato sta nei file di stato.
 ```
 
@@ -83,7 +83,7 @@ Vale anche in senso inverso: quando Claude nota un'incoerenza che non può siste
 
 ### La coda Da verificare
 
-Una correzione che richiede un controllo prima di essere applicata non si applica e non si perde: va nella sezione Da verificare del registro, con quello che serve per scioglierla. La coda si svuota una volta a settimana (lo fa `controllo-settimanale`, oppure l'utente quando chiede "cosa c'è da verificare").
+Una correzione che richiede un controllo prima di essere applicata non si applica e non si perde: va nella sezione Da verificare del registro, con quello che serve per scioglierla. La coda si svuota una volta a settimana (lo fa `weekly-check`, oppure l'utente quando chiede "cosa c'è da verificare").
 
 ### Rilettura di un testo contro la lista nera
 

@@ -1,5 +1,5 @@
 ---
-name: stato-ingaggio
+name: engagement-status
 description: >
   Tiene lo stato vivo dell'ingaggio con un cliente: dove siamo, cosa è aperto, scadenze,
   decisioni prese, promesse fatte da te e cose che aspetti dagli altri. Si aggiorna dopo
@@ -40,7 +40,7 @@ Per "a che punto siamo" e per la preparazione di una call basta il nome del clie
 
 ## I file
 
-Stanno in `clienti/<codice>/`. Se mancano, creali dai modelli in fondo. Se manca anche la cartella del cliente, creala con i tre file e segnala che la scheda del cliente non c'è (la apre `spazio-cliente`).
+Stanno in `clienti/<codice>/`. Se mancano, creali dai modelli in fondo. Se manca anche la cartella del cliente, creala con i tre file e segnala che la scheda del cliente non c'è (la apre `client-workspace`).
 
 | File | Cosa contiene | Cosa non contiene |
 |---|---|---|

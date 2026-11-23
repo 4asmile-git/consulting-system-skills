@@ -14,13 +14,13 @@ Bastano Claude e una cartella di lavoro, senza saper programmare.
 
 | Skill | A cosa serve |
 |---|---|
-| `spazio-cliente` | Apre lo spazio di un cliente nuovo: cartella, scheda a dodici voci che dice dove vive ogni pezzo del sapere su quel cliente, file dei fatti con data e fonte, un solo elenco dei clienti. Allinea anche un cliente che ha già materiale sparso |
-| `stato-ingaggio` | Tiene lo stato dell'ingaggio: dove siamo, cosa è aperto, promesse fatte e cose attese dagli altri. Si aggiorna dopo ogni call e prepara la successiva |
-| `correzione-in-regola` | Trasforma una correzione in una regola scritta. Tre tipi: stile (con una lista nera di partenza delle frasi che suonano scritte da una macchina), fatti, comportamento. Un errore corretto due volte a mano diventa una regola |
-| `chi-approva-cosa` | La mappa dell'autonomia per tipo di output: cosa Claude chiude da solo, cosa va in bozza, cosa richiede sempre un sì. Tiene la coda delle bozze in attesa |
-| `piano-del-giorno` | Apre la giornata con una domanda sola su ciò che è scaduto o fermo, propone tre priorità, chiude con un impegno per il giorno dopo |
-| `controllo-settimanale` | Nove controlli sulle incoerenze della cartella, tre interventi scelti, verifica la volta dopo. Una volta al mese un controllo di salute con otto misure |
-| `da-richiesta-a-skill` | Decide quando una richiesta che torna merita una skill, e la scrive separando il metodo dai fatti del cliente |
+| `client-workspace` | Apre lo spazio di un cliente nuovo: cartella, scheda a dodici voci che dice dove vive ogni pezzo del sapere su quel cliente, file dei fatti con data e fonte, un solo elenco dei clienti. Allinea anche un cliente che ha già materiale sparso |
+| `engagement-status` | Tiene lo stato dell'ingaggio: dove siamo, cosa è aperto, promesse fatte e cose attese dagli altri. Si aggiorna dopo ogni call e prepara la successiva |
+| `correction-to-rule` | Trasforma una correzione in una regola scritta. Tre tipi: stile (con una lista nera di partenza delle frasi che suonano scritte da una macchina), fatti, comportamento. Un errore corretto due volte a mano diventa una regola |
+| `approval-map` | La mappa dell'autonomia per tipo di output: cosa Claude chiude da solo, cosa va in bozza, cosa richiede sempre un sì. Tiene la coda delle bozze in attesa |
+| `daily-plan` | Apre la giornata con una domanda sola su ciò che è scaduto o fermo, propone tre priorità, chiude con un impegno per il giorno dopo |
+| `weekly-check` | Nove controlli sulle incoerenze della cartella, tre interventi scelti, verifica la volta dopo. Una volta al mese un controllo di salute con otto misure |
+| `request-to-skill` | Decide quando una richiesta che torna merita una skill, e la scrive separando il metodo dai fatti del cliente |
 
 ## Come stanno insieme
 
@@ -57,13 +57,13 @@ Quattro principi tengono insieme il tutto:
 
 Una alla volta, lasciando passare almeno una settimana tra l'una e l'altra.
 
-1. `spazio-cliente`, sul cliente su cui lavori di più. Per gli altri basta l'allineamento, che scrive la scheda senza spostare nulla.
-2. `stato-ingaggio`, da usare dopo ogni call per due settimane.
-3. `correzione-in-regola`, a partire dalla lista nera di stile. È la parte che si nota prima.
-4. `chi-approva-cosa`, quando cominci a far produrre a Claude documenti che escono verso i clienti.
-5. `piano-del-giorno`, quando almeno tre clienti hanno lo stato aggiornato. Prima non ha niente da leggere.
-6. `controllo-settimanale`, dopo un mese di uso.
-7. `da-richiesta-a-skill`, quando ti accorgi di chiedere lo stesso prompt per la seconda volta.
+1. `client-workspace`, sul cliente su cui lavori di più. Per gli altri basta l'allineamento, che scrive la scheda senza spostare nulla.
+2. `engagement-status`, da usare dopo ogni call per due settimane.
+3. `correction-to-rule`, a partire dalla lista nera di stile. È la parte che si nota prima.
+4. `approval-map`, quando cominci a far produrre a Claude documenti che escono verso i clienti.
+5. `daily-plan`, quando almeno tre clienti hanno lo stato aggiornato. Prima non ha niente da leggere.
+6. `weekly-check`, dopo un mese di uso.
+7. `request-to-skill`, quando ti accorgi di chiedere lo stesso prompt per la seconda volta.
 
 ## Prerequisiti
 
@@ -76,9 +76,9 @@ Alcune skill propongono di aggiungere due o tre righe al file di istruzioni del 
 
 ## Come si installa
 
-Copia la cartella della skill che ti serve (per esempio `skills/spazio-cliente`) dentro `.claude/skills/` del tuo progetto. In alternativa comprimi la cartella e caricala come skill su claude.ai. Ogni skill dice nella descrizione quando attivarsi, quindi dopo basta chiedere: "nuovo cliente", "aggiorna lo stato dopo la call", "piano di oggi".
+Copia la cartella della skill che ti serve (per esempio `skills/client-workspace`) dentro `.claude/skills/` del tuo progetto. In alternativa comprimi la cartella e caricala come skill su claude.ai. Ogni skill dice nella descrizione quando attivarsi, quindi dopo basta chiedere: "nuovo cliente", "aggiorna lo stato dopo la call", "piano di oggi".
 
-`correzione-in-regola` ha una sottocartella `references/` con la lista nera di partenza: va copiata insieme al suo `SKILL.md`.
+`correction-to-rule` ha una sottocartella `references/` con la lista nera di partenza: va copiata insieme al suo `SKILL.md`.
 
 ## Cosa non fanno
 

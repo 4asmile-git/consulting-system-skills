@@ -1,5 +1,5 @@
 ---
-name: controllo-settimanale
+name: weekly-check
 description: >
   Controllo settimanale delle incoerenze nella cartella di lavoro di un consulente:
   clienti non registrati, lo stesso fatto scritto in due posti con valori diversi, numeri
@@ -57,7 +57,7 @@ I controlli che dipendono da un file che non esiste si saltano, con una riga che
 
 Si sistema senza chiedere solo ciò che è meccanico e reversibile: spostare in `archivio/` una versione superata, sostituire con un rimando una copia identica alla casa del fatto, correggere la data `aggiornato` di una scheda appena riletta.
 
-Tutto quello che cambia un fatto, una regola o il file di istruzioni si propone e aspetta un sì. Se è installata `chi-approva-cosa`, vale la sua mappa.
+Tutto quello che cambia un fatto, una regola o il file di istruzioni si propone e aspetta un sì. Se è installata `approval-map`, vale la sua mappa.
 
 ### 4. La potatura del file di istruzioni
 
